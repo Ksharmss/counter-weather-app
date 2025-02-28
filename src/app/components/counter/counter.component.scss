@@ -1,0 +1,49 @@
+.counter-container {
+    text-align: center;
+    padding: 20px;
+    display: flex;
+    justify-content: space-evenly;
+  }
+  .counter-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #f8f9fa;
+    border-radius: 5px;
+  }
+  .counter-btn
+  {
+    background: linear-gradient(45deg, #007bff, #6610f2);
+    border: none;
+    width: 20%;
+    border-radius: 15px;
+    height: 50px;
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+  }
+  .increment
+  {
+    background: linear-gradient(90deg, #ff7e5f, #feb47b)!important;
+    width: 10%!important;
+  }
+  span{
+    background: blue;
+    padding: 0.8rem;
+    border-radius: 10px;
+    text-align: center;
+    color: white;
+    margin-right: 2rem;
+    align-self: anchor-center;
+    font-weight: bold;
+}
+  
+.main-container
+{
+    display: flex;
+    justify-content: center;
+    padding: 2rem;
+}

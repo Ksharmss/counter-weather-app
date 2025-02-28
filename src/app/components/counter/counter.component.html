@@ -1,0 +1,10 @@
+<div class="counter-container">
+<button class="btn btn-lg text-white px-4 py-2 rounded-pill counter-btn" (click)="addCounter()">Add Counter</button>
+<button class="btn btn-lg text-white px-4 py-2 rounded-pill counter-btn" (click)="resetCounters()">Reset All</button>
+</div>
+<div *ngFor="let counter of counters" class="main-container">
+    <span>{{ counter.count }}</span>
+    <button class="mg-r btn btn-lg text-white px-4 py-2 rounded-pill counter-btn increment" (click)="increment(counter.id)">Increment</button>
+    <button class="mg-r btn btn-lg text-white px-4 py-2 rounded-pill counter-btn increment" (click)="decrement(counter.id)">Decrement</button>
+    <button class="mg-r btn btn-lg text-white px-4 py-2 rounded-pill counter-btn increment" (click)="deleteCounter(counter.id)">Delete</button>
+  </div>

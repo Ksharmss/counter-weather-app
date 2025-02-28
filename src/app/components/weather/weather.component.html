@@ -1,0 +1,22 @@
+
+<div class="weather-container">
+    <input type="text" [(ngModel)]="city" placeholder="Enter city name">
+    <button class="action-btns" (click)="addCity()">Generate</button>
+    <button class="action-btns" (click)="clearAll()">Clear</button>
+    
+    <ul>
+      <li *ngFor="let loc of locations; let i = index" class="weather-item" (click)="getForecast(i)">
+        <span>{{ loc.name }} - {{ loc.temp }}°C</span>
+        <img [src]="loc.icon" alt="weather">
+        <button class="mg-r action-btns"  (click)="refreshCity(i)">Refresh</button>
+        <button class="action-btns"  (click)="removeCity(i)">Remove</button>
+      </li>
+    </ul>
+    
+    <div *ngIf="selectedForecast" class="forecast-panel">
+      <h3>5-Day Forecast</h3>
+      <div *ngFor="let day of selectedForecast">
+        <p>{{ day.dt_txt }} - {{ day.main.temp }}°C</p>
+      </div>
+    </div>
+  </div>

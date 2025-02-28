@@ -1,0 +1,15 @@
+.navbar {
+    display: flex;
+    justify-content: center;
+    gap: 14rem;
+    background-color: #007bff;
+    padding: 15px;
+  }
+  .navbar a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+  }
+  .navbar a:active {
+    color: orange;
+  }

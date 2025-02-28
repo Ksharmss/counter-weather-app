@@ -1,1 +1,15 @@
-/* You can add global styles to this file, and also import other style files */
+body{
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+    height: 100vh;
+    background: linear-gradient(to right, black, grey);
+}
+button
+{
+    cursor: pointer;
+}
+.mg-r
+{
+  margin-right: 1rem;
+}
